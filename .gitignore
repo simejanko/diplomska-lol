@@ -1,0 +1,8 @@
+game_data*
+.idea/*
+*.pyc
+nohup*
+*.tab
+*.zip
+*.json
+*.pkl
