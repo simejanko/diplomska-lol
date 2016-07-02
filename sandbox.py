@@ -47,9 +47,14 @@ bar_width = 0.2
 for i in range(6):
     color  = 'blue' if i<3 else 'red'
     rects = plt.bar(index+bar_width*i , winrates[i], bar_width,color=color,alpha=0.6)
-
-plt.xlabel('champions')
-plt.ylabel('win rates')
+plt.tick_params(
+    axis='x',          # changes apply to the x-axis
+    which='both',      # both major and minor ticks are affected
+    bottom='off',      # ticks along the bottom edge are off
+    top='off',         # ticks along the top edge are off
+    labelbottom='off') # labels along the bottom edge are off
+plt.xlabel('heroji')
+plt.ylabel('delež zmag')
 # plt.xticks(index + bar_width*2, ('sodelovanje pri ubojih (kill participation)'))
 #plt.legend(loc='lower right')
 
